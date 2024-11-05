@@ -1,0 +1,102 @@
+/* src/pages/Login.css */
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+  justify-content: center; /* Center content vertically */
+  min-height: 100vh; /* Full viewport height */
+  /* background-color: rgb(250, 240, 240); */
+  background-image: url(family.jpg);
+  background-size: cover; /* Cover the entire viewport */
+  background-position: center; /* Center the background image */
+  padding: 20px;
+  transition: background-color 0.5s ease; /* Smooth transition for background color */
+  color: white; /* Change text color for visibility against background */
+}
+
+.login-logo {
+  margin-bottom: 10px; /* Space below the logo */
+  width: 220px; /* Set a fixed width for the logo */
+  height: auto; /* Maintain aspect ratio */
+}
+.login-logo-top-left {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 100px;
+  height: auto;
+  cursor: pointer;
+}
+.login-container h2 {
+  color: #fff; /* White text for heading */
+  margin-bottom: 20px;
+}
+
+.form-group {
+  width: 100%; /* Make form group full width */
+  max-width: 400px; /* Limit the width of the inputs */
+  display: flex; /* Use flexbox to align items */
+  flex-direction: column; /* Stack elements vertically */
+}
+
+.login-container input {
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 4px; /* Rounded corners */
+  font-size: 16px;
+  transition: border-color 0.3s ease; /* Smooth border color transition */
+}
+
+.login-container input:focus {
+  border-color: #007bff; /* Highlight border on focus */
+  outline: none; /* Remove default outline */
+}
+
+.login-container button {
+  width: 200px; /* Set button width smaller than input boxes */
+  padding: 10px; /* Adjust button padding */
+  background-color: #292074; /* Bootstrap primary color */
+  color: white; /* White text */
+  border: none;
+  border-radius: 4px; /* Rounded corners */
+  font-size: 16px;
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+  margin-top: 10px; /* Space above button */
+  align-self: center; /* Center the button */
+}
+
+.login-container button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.error-message {
+  color: red; /* Error text color */
+  margin-bottom: 15px; /* Spacing below error message */
+  text-align: center; /* Center the error message */
+}
+/* src/pages/Login.css */
+
+/* Add these styles for the forgot password link */
+.forgot-password {
+  margin-top: 15px; /* Space above the link */
+}
+
+.forgot-password-link {
+  color: #007bff; /* Link color */
+  text-decoration: none; /* Underline the link */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+.forgot-password-link:hover {
+  color: #0056b3; /* Darker blue on hover */
+}
+
+.cancel-link {
+  display: block; /* Make it a block for spacing */
+  margin-top: 15px; /* Space above the cancel link */
+  color: #5045bb; /* Bootstrap danger color */
+  cursor: pointer; /* Pointer cursor on hover */
+}
